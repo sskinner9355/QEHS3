@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://qehsportal.hilmarcheese.com:82">
-    <title>Redirecting...</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Azure Static Web App</title>
+<style>
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background: linear-gradient(135deg, #0078D4, #00B4D8);
+
+      color: white;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      height: 100vh;
+
+      text-align: center;
+
+    }
+
+    .container {
+
+      background: rgba(0, 0, 0, 0.2);
+
+      padding: 2rem;
+
+      border-radius: 12px;
+
+      backdrop-filter: blur(10px);
+
+    }
+
+    h1 {
+
+      margin-bottom: 0.5rem;
+
+    }
+
+    p {
+
+      margin: 0.5rem 0;
+
+      opacity: 0.9;
+
+    }
+
+    .status {
+
+      margin-top: 1rem;
+
+      padding: 0.5rem 1rem;
+
+      background: #28a745;
+
+      border-radius: 6px;
+
+      display: inline-block;
+
+    }
+</style>
 </head>
 <body>
-    <p>Redirecting to <a href="https://qehsportal.hilmarcheese.com:82">https://qehsportal.hilmarcheese.com:82</a></p>
+<div class="container">
+<h1> Azure Static Web App</h1>
+<p>Your deployment is working successfully!</p>
+<p id="time"></p>
+<div class="status">
+
+      Live Deployment 
+</div>
+</div>
+<script>
+
+    // Show current time to prove JS is working
+
+    const timeEl = document.getElementById("time");
+
+    const now = new Date();
+
+    timeEl.textContent = "Current time: " + now.toLocaleString();
+</script>
 </body>
 </html>
+ 
